@@ -1,0 +1,12 @@
+services:
+    client: 
+        image: client
+        
+        ports: 
+            - 8080:3000
+    server:
+        image: express-docker
+        ports: 
+            - 6080:5000
+    mongodb:
+        image: mongo
